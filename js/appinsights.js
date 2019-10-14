@@ -24,7 +24,15 @@
             dataType: tableau.dataTypeEnum.string,
         }, {
             id: "application",
-            alias: "Applicaion Version",
+            alias: "Application Version",
+            dataType: tableau.dataTypeEnum.string,
+        }, {
+            id: "clientType",
+            alias: "Client Type",
+            dataType: tableau.dataTypeEnum.string,
+        }, {
+            id: "clientModel",
+            alias: "Model",
             dataType: tableau.dataTypeEnum.string,
         }];
 
@@ -60,7 +68,9 @@
                     "count": feat[i].count,
                     "type": feat[i].type,
                     "name": feat[i].customEvent.name,
-                    "application": feat[i].application.version
+                    "application": feat[i].application.version,
+                    "clientType": feat[i].client.type,
+                    "clientModel": feat[i].client.model
                 });
             }
             table.appendRows(tableData);
