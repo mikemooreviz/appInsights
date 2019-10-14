@@ -1,0 +1,12 @@
+{
+  "name": "appInsights",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mikemooreviz/appInsights",
+  "author": "Mike Moore <mikemooreviz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
+  }
+}
